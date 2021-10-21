@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+	<meta charset="utf-8"/>
+	<title> Formulario </title>
+</header>
+<body>
+	<header> <br> Formulario de prueba de HTML </br> </header>
+	<section>
+	<form action="" methode="get"> <br>
+		<label for="text"> Nombre: </label> <br>
+		<input type="text" id="nombre" name="nombre" autofocus required> <br> <br>
+		<label for="email"> Correo electrónico: </label> <br>
+		<input type="email" id="email" name="correo electronico" required> <br>
+		<label for="url"> URL: </label> <br>
+		<input type="url" id="url" placeholder="Escribe la URL de tu página web personal" name="url"> <br>
+		<label for="date"> Fecha: </label> <br>
+		<input type="date" id="date" name="fecha"> <br>
+		<label for="time"> Tiempo: </label> <br>
+		<input type="time" id="time" name="tiempo"> <br>
+		<label for="datetime"> Fecha y Hora: </label> <br>
+		<input type="datetime" id="datetime" name="fecha y hora"> <br>
+		<label for="month"> Mes: </label> <br>
+		<input type="month" id="month" name="mes"> <br>
+		<label for="week"> Semana: </label> <br>
+		<input type="week" id="week" name="semana"> <br> 
+		<label for="number"> Número (entre -10- 10): </label> <br>
+		<input type="number" id="number" name="numero" min="-10" max="10"> <br>
+		<label for="telefono"> Telefono: </label> <br>
+		<input type="tel" id="telefono" name="telefono"> <br> 
+		<label for="busqueda"> Busqueda: </label> <br>
+		<input type="search" id="busqueda" name="busqueda"> <br> 
+		<label for="favcolor"> Color favorito: </label> <br>
+		<input type="color" id="favcolor" name="favcolor" value="#d7dbdd"> <br> <br>
+		<input type="submit" value="Enviar"> <br>
+	</form>
+	</section>
+	<hr>
+<h1> <b> Formularios 2 </b> </h1> <br>
+	<section>
+	<form action="/action_formget.get" methode="get">
+	<p> <b> Color de pelo </b> </p>
+		<input type="radio" id="html" name="color de pelo" value="html">
+		<label for="rubio"> Rubio </label> <br>
+		<input type="radio" id="html" name="color de pelo" value="html">
+		<label for="negro"> Negro </label> <br>
+		<input type="radio" id="html" name="color de pelo" value="html">
+		<label for="castaño"> Castaño </label> <br>
+		<input type="radio" id="html" name="color de pelo" value="html">
+		<label for="pelirojo"> Pelirojo </label> <br>
+	<p> <b> Nacionalidad </b> </p>
+		<input type="radio" id="html" name="Nacionalidad" value="html">
+		<label for="Española"> Española </label> <br>
+		<input type="radio" id="html" name="Nacionalidad" value="html">
+		<label for="Extranjero"> Extranjero </label> <br>
+	<p> <b> Navegadores instalados </b> </p>
+		<input type="checkbox" id="Internet Explorer" name="Internet Explorer" value="Internet explorer">
+		<label for="navegador"> Internet Explorer </label> <br>
+		<input type="checkbox" id="Firefox" name="Firefox" value="Firefox">
+		<label for="navegador"> Firefox </label> </br>
+		<input type="checkbox" id="Edge" name="Edge" value="Edge"> 
+		<label for="Edge"> Edge </label> </br> <br>
+		<label for="provincia"> <b> Provincia </b> </label> <br> <br>
+			<select name="provincia" id="provincia"> 
+				<option value=""> </option>
+				<option value="Cádiz"> Cádiz </option>
+				<option value="Almeria"> Almeria </option>
+				<option value="Huelva"> Huelva </option>
+				<option value="Málaga"> Málaga </option>
+				<option value="Sevilla"> Sevilla </option>
+				<option value="Granada"> Granada </option>
+				<option value="Cordoba"> Cordoba </option>
+				<option value="Jaen"> Jaen </option>
+			</select> <br> <br>
+			<label for="pwd"> Contraseña </label> <br>
+		<input type="password" id="pwd" name="pwd" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="Debe de tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula." required> <br> <br>
+		<input type="reset" value="borrar"> 
+		<input type="submit" value="enviar"> <br> <br>	
+	</form>
+	</section>
+	<p> <a href="index.html"> Volver a inicio </a> </p> 
+</body>
+</html>
+
