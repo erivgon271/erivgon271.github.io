@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<header>
+	<meta charset="utf-8"/>
+	<title> Formulario </title>
+    <style type="text/css">
+
+    /* cambio de letra para los h1 y color */
+
+    h1 { color:crimson ; 
+    	font-family: Georgia ; 
+    	font-size: 4em} 
+
+    /* fondo del body en color cyan */
+
+	body { background-color: cyan;}
+
+	/* las secciones tienen cambiadas las letras y color, tiene insertada imagen para el fondo de la seccion */
+
+	section { color:rgb(31, 8, 241) ; 
+		font-family: cursive; 
+		font-size: 1.5em;
+		background-image:url("index.jpeg") ;}
+
+	</style>
+</header>
+<body>
+	<h1> <br> Formulario de prueba de HTML </br> </h1>
+	<section>
+	<form action="gracias.html" methode="get"> <br>
+	<div>
+		<label for="text"> Nombre: </label> <br>
+		<input type="text" id="nombre" name="nombre" autofocus required> <br> <br>
+	</div>
+	<div>
+		<label for="email"> Correo electrónico: </label> <br>
+		<input type="email" id="email" name="correo electronico" required> <br>
+		<label for="url"> URL: </label> <br>
+		<input type="url" id="url" placeholder="Escribe la URL de tu página web personal" name="url"> <br>
+	</div>
+	<div>
+		<label for="date"> Fecha: </label> <br>
+		<input type="date" id="date" name="fecha"> <br>
+		<label for="time"> Tiempo: </label> <br>
+		<input type="time" id="time" name="tiempo"> <br>
+		<label for="datetime"> Fecha y Hora: </label> <br>
+		<input type="datetime" id="datetime" name="fecha y hora"> <br>
+		<label for="month"> Mes: </label> <br>
+		<input type="month" id="month" name="mes"> <br>
+		<label for="week"> Semana: </label> <br>
+		<input type="week" id="week" name="semana"> <br> 
+		<label for="number"> Número (entre -10- 10): </label> <br>
+		<input type="number" id="number" name="numero" min="-10" max="10"> <br>
+	</div>
+	<div>
+		<label for="telefono"> Telefono: </label> <br>
+		<input type="tel" id="telefono" name="telefono"> <br> 
+		<label for="busqueda"> Busqueda: </label> <br>
+		<input type="search" id="busqueda" name="busqueda"> <br> 
+		<label for="favcolor"> Color favorito: </label> <br>
+		<input type="color" id="favcolor" name="favcolor" value="#d7dbdd"> <br> <br>
+		<input type="submit" value="Enviar"> <br>
+	</div>
+	</form>
+	</section>
+	<hr>
+<h1> <b> Formularios 2 </b> </h1> <br>
+	<section>
+	<form action="gracias.html" methode="get">
+	<div 1>
+	<p> <b> Color de pelo </b> </p>
+		<input type="radio" id="color 1" name="color de pelo" value="rubio">
+		<label for="color 1"> Rubio </label> <br>
+		<input type="radio" id="color 2" name="color de pelo" value="negro">
+		<label for="color 2"> Negro </label> <br>
+		<input type="radio" id="color 3" name="color de pelo" value="castaño">
+		<label for="color 3"> Castaño </label> <br>
+		<input type="radio" id="color 4" name="color de pelo" value="ml">
+		<label for="color 4"> Pelirojo </label> <br>
+	</div>
+	<div>
+	<p> <b> Nacionalidad </b> </p>
+		<input type="radio" id="Nacionalidad" name="Nacionalidad" value="expañola">
+		<label for="Española"> Española </label> <br>
+		<input type="radio" id="Nacionalidad" name="Nacionalidad" value="Extranjero">
+		<label for="Extranjero"> Extranjero </label> <br>
+	</div>
+	<div>
+		<p> <b> Navegadores instalados </b> </p>
+		<input type="checkbox" id="Internet Explorer" name="Internet Explorer" value="Internet explorer">
+		<label for="navegador"> Internet Explorer </label> <br>
+		<input type="checkbox" id="Firefox" name="Firefox" value="Firefox">
+		<label for="navegador"> Firefox </label> </br>
+		<input type="checkbox" id="Edge" name="Edge" value="Edge"> 
+		<label for="Edge"> Edge </label> </br> <br>
+	</div>
+	<div>
+		<label for="provincia"> <b> Provincia </b> </label> <br> <br>
+			<select name="provincia" id="provincia"> 
+				<option value=""> </option>
+				<option value="Cádiz"> Cádiz </option>
+				<option value="Almeria"> Almeria </option>
+				<option value="Huelva"> Huelva </option>
+				<option value="Málaga"> Málaga </option>
+				<option value="Sevilla"> Sevilla </option>
+				<option value="Granada"> Granada </option>
+				<option value="Cordoba"> Cordoba </option>
+				<option value="Jaen"> Jaen </option>
+			</select> <br> <br>
+	</div>
+	<div>
+			<label for="pwd"> Contraseña </label> <br>
+		<input type="password" id="pwd" name="pwd" pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="Debe de tener entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula." required> <br> <br>
+		<input type="reset" value="borrar"> 
+		<input type="submit" value="enviar" ><br> <br>	
+	</div>
+	</form>
+	</section>
+	<p> <a href="index.html"> Volver a inicio </a> </p> 
+</body>
+</html>
+
