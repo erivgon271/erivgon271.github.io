@@ -13,7 +13,9 @@
 
     /* fondo del body en color cyan */
 
-	body { background-color: cyan;}
+	body { background-color: cyan;
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		}
 
 	/* las secciones tienen cambiadas las letras y color, tiene insertada imagen para el fondo de la seccion */
 
@@ -21,10 +23,75 @@
 		font-family: cursive; 
 		font-size: 1.5em;
 		background-image:url("index.jpeg") ;}
+	
+	/* añadir imagen avatar centrada */
+	.avatar {
+ 		vertical-align: middle;
+  		width: 75px;
+ 		height: 75px;
+  		border-radius: 75%;
+		}
+	
+	/* Cambio de color fuente y de familia de palabras para un texto diferente a la web y todas en mayusculas */
+
+	.div2 { color:green;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		text-transform: uppercase;}
+	
+	/* Alineado justificado cambio de tamaño de letra y letra capital */
+	
+	.div3 {font-size: 100%;
+		text-transform:capitalize;
+		text-align: justify;
+		size: 0.5em;}
+
+	/* Interlineado distinto para cada parrafo y cambio de white-space*/
+	
+	.p1 { line-height: 1.2; font-size: 1em; white-space: normal }
+	.p2 { line-height: 150%; white-space: nowrap;}
+	.p3 { line-height: 200%; white-space: pre}
+
+	/* Cambio de links, decoracion, cambie de color cuando esta visitado... */
+	.a1 { color: blue; 
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-size: larger;
+		text-decoration: overline;}
+
+	.a1:visited { background-color: darkorange;}
+
+	.a1:link { background-color: chartreuse;}
+
+	.a1:hover { background-color: crimson;}
+
+	.a1:active { background-color: darkgreen;}
+
+	.a2 { color: blueviolet;
+		font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+		font-size: x-large;
+		text-decoration: wavy;}
+
+	.a3 { color: crimson;
+		font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+		font-size: xx-large;
+		text-decoration: underline;}
+	.a3 { background: url(https://www.facebook.com/favicon.ico) no-repeat left center; padding-left: 20px;}
+	.a4 { color: darkblue; 
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: small;
+		text-decoration: none;}
+	
+	.a4.botton { text-decoration: darkorchid;
+		border: 1px;}
+
+	.a4.botton:hover { background-color: darkturquoise;}
+
 
 	</style>
 </header>
 <body>
+	<center>
+	<img src="images.jpeg" alt="Avatar" class="avatar">
+	</center> 
 	<h1> <br> Formulario de prueba de HTML </br> </h1>
 	<section>
 	<form action="gracias.html" methode="get"> <br>
@@ -37,6 +104,48 @@
 		<input type="email" id="email" name="correo electronico" required> <br>
 		<label for="url"> URL: </label> <br>
 		<input type="url" id="url" placeholder="Escribe la URL de tu página web personal" name="url"> <br>
+	</div>
+	<div class="div2"> 
+		<pre>
+			Hemos visto como el type= “text” le da a la caja una apariencia sencilla. Este tipo de campos se usan para albergar informaciones cortas y concretas.
+
+Podemos completar el estilo de esta caja gracias a los siguientes atributos:
+
+size: mediante el atributo size podemos definir el tamaño de la caja. Es decir, la apariencia de la misma. Si el texto que vamos a escribir no cabe en la caja, éste se desplazará pero sin que la caja varíe su tamaño. El texto irá desapareciendo por la izquierda.
+		</pre>
+	</div>
+	<div class="div3"> 
+		<p>CSS es utilizado para diseñar y dar estilo a las páginas web, por ejemplo, alterando la fuente, color, tamaño y espaciado del contenido, dividirlo en múltiples columnas o agregar animaciones y otras características decorativas. Este módulo proporciona un suave comienzo hacia el dominio de CSS con los conceptos básicos acerca de su funcionamiento, la sintaxis y la manera en que puedes comenzar a utilizarlo para agregar estilos al HTML.</p>
+	</div>
+	<div class="div4">
+		<p class="p1">
+
+			Introducción a CSS
+
+			Si eres nuevo en el desarrollo web, asegúrate de leer nuestro artículo de conceptos básicos de CSS para saber qué es CSS y cómo usarlo.
+			Tutoriales CSS
+		</p class="p2">
+		<p>
+		
+			Nuestra área de aprendizaje de CSS contiene una gran cantidad de tutoriales que te llevan desde el nivel de principiante hasta el nivel de competencia, cubriendo todos los aspectos fundamentales.
+			Referencia CSS
+		
+		</p>
+		<p class="p3">
+		
+			Nuestra exhaustiva referencia de CSS para desarrolladores web experimentados describe cada propiedad y concepto de CSS.
+		
+		Nuestra área de aprendizaje CSS presenta múltiples módulos que enseñan CSS desde cero — no se requieren conocimientos previos.
+		</p>
+	</div>
+	<div>
+	<nav>
+		<a class="a1" href="https://www.w3schools.com/html/html_basic.asp" > w3schools html</a> <br>
+		<a class="a2" href="https://www.w3schools.com/css/default.asp"> w3schools CSS</a> <br>
+		<a class="a3" href="https://www.w3schools.com/js/default.asp"> w3schools javascript </a> <br>
+		<a class="a4" href="https://www.w3schools.com/sql/default.asp"> w3schools SQL</a> <br>
+
+	</nav>
 	</div>
 	<div>
 		<label for="date"> Fecha: </label> <br>
@@ -117,6 +226,7 @@
 	</form>
 	</section>
 	<p> <a href="index.html"> Volver a inicio </a> </p> 
+
 </body>
 </html>
 
