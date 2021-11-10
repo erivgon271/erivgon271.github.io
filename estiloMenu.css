@@ -1,0 +1,53 @@
+h1 {text-align: center; 
+	font-family: 'Times New Roman', Times, serif;}
+
+.horizontal li { font-family: 'Times New Roman', Times, serif;
+    color: black }
+
+.horizontal { background-color: #a9c401 ; 
+	padding: 10px; 
+	overflow: hidden;
+    padding-bottom: 10px; 
+    margin-bottom: 2em;  }
+
+.horizontal li { width: 125px;
+    padding: 0.5px;
+    margin: 0;
+    border: 0.5px solid black;
+    list-style: none;
+    background-color: white;}
+
+.horizontal li {float:left }
+
+.horizontal a { text-decoration: none;
+    color: black;
+    padding: .2em 0 .2em .5em;
+    display: block;}
+
+.horizontal a:hover { background-color: gray;
+    padding: .2em 0 .2em .5em;
+    color: white;}
+
+.vertical { background-color: turquoise; 
+	padding: 10px; 
+	overflow: hidden;
+    padding-bottom: 10px;}
+
+.vertical li {font-family: 'Times New Roman', Times, serif;
+    color: black}
+
+.vertical li {width: 150px; padding: 0px;
+    border: 0.5px solid black;
+    list-style: none;
+    overflow: hidden;
+    background-color: white;
+    margin: 0;}
+
+.vertical a:hover { background-color: gray;
+    padding: .2em 0 .2em .5em;
+    color: white;}
+
+.vertical a {text-decoration: none;
+    color: black;
+    padding: .2em 0 .2em .5em;
+    display: block;}
