@@ -1,0 +1,94 @@
+/* Estefania Rivera González */
+
+/* ponemos un tamaño al body y html para que nos ocupe el 100% de la pantalla */
+html, body { width: 100%; height: 100%; 
+    }
+
+/* nuestro body es flexible y debemos poner un height 100% para que ocupe la pantalla */
+body {display: flex;
+    flex-direction: column;
+    height: 100%;}
+
+/* nuestro header le ponemos un tamaño fijo 5em con el height que se quede como fila, tiene un margin-right para que aparezca un margen 
+    a la derecha */
+
+header { background-color: gray; 
+    margin-right: 15px;
+    height: 5em;}
+
+/* flex-wrap:wrap es para que los contenedores se reduzca se superponga cuando reducimos pantalla abajo superpuestos*/
+
+.principal { 
+    flex-grow: 1;
+    background-color:darkgoldenrod; 
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    }
+
+/* nuestro footer le ponemos un tamaño fijo 5em con el height que se quede como fila, tiene un margin-right para que aparezca un margen 
+    a la derecha */
+
+footer { background-color: blue; 
+    margin-right: 15px;
+    height: 5em;}
+
+.izquierda { background-color:darkgoldenrod; 
+    margin: 5px;
+    padding: 50px;
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    flex-grow: 1;}
+
+.centro {background-color:chartreuse; 
+    margin: 5px;
+    padding: 100px;
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    flex-grow: 7;}
+
+.derecha {  background-color:darkgoldenrod; 
+    margin: 5px;
+    padding: 50px;
+    border: white;
+    border-style: solid;
+    border-width: 1px;
+    flex-grow: 1;}
+
+/* @media es para modificar la resolucion de nuestra pagina, con este podemos indicar que cuando cambie la resolucion
+    podamos cambiar la visibilidad de la pagina, al utilizar flex-direction:column cuando cambiamos el tamañao de la
+    pagina se nos cambia la forma organizada de la pantalla, ya que en el principal anterior teniamos dispuesto como
+    fila y en esta tenemos puesto columna*/
+
+@media only screen and (max-width:750px){
+    .principal { background-color: aquamarine; 
+        display: flex;
+        flex-direction: column;
+        margin-right: 15px;
+        flex-wrap: wrap;
+        /*height: 80%; la columna de la derecha no se modifica cuando cambiamos el tamaño de la pagina */
+        }
+    .izquierda { background-color:violet; 
+            margin: 5px;
+            padding: 50px;
+            border: white;
+            border-style: solid;
+            border-width: 1px;
+            flex-grow: 1;}
+    .centro {background-color:rosybrown; 
+            margin: 5px;
+            padding: 100px;
+            border: white;
+            border-style: solid;
+            border-width: 1px;
+            flex-grow: 7;}
+    .derecha {  background-color:violet; 
+            margin: 5px;
+            padding: 50px;
+            border: white;
+            border-style: solid;
+            border-width: 1px;
+            flex-grow: 1;}}
