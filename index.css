@@ -1,0 +1,37 @@
+html {width: 900px;
+margin: auto;}
+
+body {background-image: url(fondo1.jpg); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:aliceblue;}
+
+h1 { border-bottom: aliceblue 1px solid;
+    font-size: 3em;
+    text-align: center;}
+
+a {text-decoration: none;
+    color: cornflowerblue;
+    }
+
+.ejercicios {width: 30em;
+    text-align: center;
+    margin-left: 15em;
+    padding-bottom: 2em;}
+
+li {border: blue 1px solid;
+    list-style: none;
+    padding: 0.5em;
+    background-color: aliceblue;}
+
+a:hover {color: azure;}
+
+li:hover {padding: 2em;
+    background-color: blue ;}
+
+footer {border-top: 2px solid aliceblue;
+    padding-top: 5em ; }
+
