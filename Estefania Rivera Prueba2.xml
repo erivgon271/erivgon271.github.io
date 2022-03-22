@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="equipos.css"?>
+<!DOCTYPE equipos [
+    <!ELEMENT  equipo ( nombre, liga, ciudad, estadio, presidente, entrenador, patrocinador+)*>
+    <!ELEMENT equipo (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT liga (#PCDATA)>
+    <!ELEMENT estadio (#PCDATA)>
+    <!ELEMENT presidente (#PCDATA)>
+    <!ELEMENT entrenador (#PCDATA)>
+    <!ELEMENT patrocinador (#PCDATA)>
+    <!ATTLIST equipo codigo ID #REQUIRED>
+    ]>
+
+<equipos>
+    <equipo codigo="r1">
+    <nombre> Real Madrid </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>Bernabeu</estadio>
+    <presidente>Florentino</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    <equipo codigo="b2">
+    <nombre> Betis </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>Betis</estadio>
+    <presidente>andaluz</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    <equipo codigo="bb3">
+    <nombre > Barcelona </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>cap Nou</estadio>
+    <presidente>catalan</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    <equipo>
+    <nombre codigo="bb4"> Barcelona </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>cap Nou</estadio>
+    <presidente>catalan</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    <equipo codigo="r5">
+    <nombre> Real Madrid </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>Bernabeu</estadio>
+    <presidente>Florentino</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    <equipo codigo="b6">
+    <nombre> Betis </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>Betis</estadio>
+    <presidente>andaluz</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    <equipo codigo="bb7">
+    <nombre > Barcelona </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>cap Nou</estadio>
+    <presidente>catalan</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    <equipo codigo="bb8">
+    <nombre> Barcelona </nombre>
+    <liga>Liga Nacional</liga>
+    <estadio>cap Nou</estadio>
+    <presidente>catalan</presidente>
+    <entrenador>no se </entrenador>
+    <patrocinador> no se </patrocinador>
+    </equipo>
+    </equipos>
+
