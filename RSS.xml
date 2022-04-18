@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+</rss><rss version="2.0">
+<channel>
+    <title> Estefanía </title>
+    <link>erivgon271.github.io</link>
+    <description> Trabajos realizados por Estefanía </description>
+        <item>
+            <title> HTML </title>
+            <link>https://erivgon271.github.io/ejercicio1.html</link>
+            <description> Tareas realizadas con html </description>
+        </item>
+         <item>
+            <title> CSS </title>
+            <link>https://erivgon271.github.io/paginaprincipal.html</link>
+            <description> Tareas realizadas con css, modifica el html y realiza un diseño</description>
+        </item>
+         <item>
+            <title> XML </title>
+            <link>https://erivgon271.github.io/Estefania%20Rivera%20Prueba2.xml</link>
+            <description> Tarea realizada con XML </description>
+        </item>
+</channel>
+
+
+
+
+</rss>
